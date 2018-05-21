@@ -32,6 +32,7 @@ const ToDo = (props) => (
             label={'Add task!'}
             onClick={props.onAddTaskClick}
             fullWidth={true}
+            primary={true}
         />
 
         {
@@ -41,27 +42,27 @@ const ToDo = (props) => (
                     {<h3 >{task.text}</h3>}
                     <RadioButtonGroup
                         name={'progres'}
-                        defaultSelected="nietknięte"
+                        defaultSelected="To do"
                         onChange={props.onChangeRadio}
                         style={{ display: 'flex' }}
 
                     >
                         <RadioButton
-                            value="nietknięte"
-                            label="Simple"
-                            style={{ color: 'red' }}
+                            value="To do"
+                            label="To do"
+
 
                         />
                         <RadioButton
-                            value="wtrakcie"
-                            label="Selected by default"
-                            style={{ color: 'yellow' }}
+                            value="In progres"
+                            label="In progres"
+
 
                         />
                         <RadioButton
-                            value="zrobione"
-                            label="Custom icon"
-                            style={{ color: 'green' }}
+                            value="Finished"
+                            label="In progres"
+
 
 
                         />

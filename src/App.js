@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import { connect } from 'react-redux'
+
 
 // Components
-
+import AppBar from 'material-ui/AppBar'
 
 import Todo from './components/Todo'
+
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-     <Todo/>
 
+      <div>
+        <AppBar
+          title="Welcome in FireTasks"
+          iconElementLeft={null}
+        />
+
+
+        <Todo />
       </div>
     );
   }

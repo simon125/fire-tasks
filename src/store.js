@@ -7,9 +7,9 @@ import todos from './state/todos'
 
 
 const reducer = combineReducers({
-  
+ 
     todos,
-  
+
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
